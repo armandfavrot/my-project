@@ -203,8 +203,8 @@ limits = [
 fig, ax = plt.subplots (figsize=(4.9, 3.15))
 
 ax.scatter (observed, predicted, color="steelblue", alpha=0.75,
-            edgecolors="white", linewidths=0.5)
-ax.plot (limits, limits, color="black", linestyle="--", linewidth=1)
+            edgecolors="white", linewidths=0.35, s=18)
+ax.plot (limits, limits, color="black", linestyle="--", linewidth=0.8)
 
 ax.set (
     xlabel = "Émissions observées à 72 h (kg N/ha)",
@@ -213,6 +213,10 @@ ax.set (
     xlim = limits,
     ylim = limits,
 )
+ax.set_xlabel ("Émissions observées à 72 h (kg N/ha)", fontsize=8)
+ax.set_ylabel ("Émissions prédites à 72 h (kg N/ha)", fontsize=8)
+ax.set_title ("Prédictions du MLP — jeu de test", fontsize=9)
+ax.tick_params (labelsize=7)
 ax.grid (alpha=0.2)
 ax.set_axisbelow (True)
 
@@ -223,6 +227,7 @@ ax.text (
     f"n = {len(data_predictions)}",
     transform = ax.transAxes,
     va = "top",
+    fontsize = 7,
 )
 
 fig.tight_layout()
