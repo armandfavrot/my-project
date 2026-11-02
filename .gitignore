@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+ENV/
+
+# R
+.Rhistory
+.RData
+Rplots.pdf
+
+# Jupyter
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Generated data and model outputs
+/scripts/data.csv
+/scripts/results/
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

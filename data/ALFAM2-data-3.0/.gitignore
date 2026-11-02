@@ -1,0 +1,13 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# csv files created from submissions
+data-csv
+
+# LibreOffice lock files
+.~lock*
