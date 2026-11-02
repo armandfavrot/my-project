@@ -200,7 +200,7 @@ limits = [
     max (observed.max(), predicted.max()) * 1.05,
 ]
 
-fig, ax = plt.subplots (figsize=(7, 4.5))
+fig, ax = plt.subplots (figsize=(4.9, 3.15))
 
 ax.scatter (observed, predicted, color="steelblue", alpha=0.75,
             edgecolors="white", linewidths=0.5)
