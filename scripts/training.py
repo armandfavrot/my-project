@@ -200,7 +200,7 @@ limits = [
     max (observed.max(), predicted.max()) * 1.05,
 ]
 
-fig, ax = plt.subplots (figsize=(6, 5.5))
+fig, ax = plt.subplots (figsize=(7, 4.5))
 
 ax.scatter (observed, predicted, color="steelblue", alpha=0.75,
             edgecolors="white", linewidths=0.5)
@@ -213,7 +213,6 @@ ax.set (
     xlim = limits,
     ylim = limits,
 )
-ax.set_aspect ("equal", adjustable="box")
 ax.grid (alpha=0.2)
 ax.set_axisbelow (True)
 
@@ -228,7 +227,7 @@ ax.text (
 
 fig.tight_layout()
 fig.savefig (IMAGES_DIR / "observed_vs_predicted.pdf", bbox_inches="tight")
-fig.savefig (IMAGES_DIR / "observed_vs_predicted.png", dpi=200, bbox_inches="tight")
+fig.savefig (IMAGES_DIR / "observed_vs_predicted.png", dpi=300, bbox_inches="tight")
 plt.close (fig)
 
 # --------------------------------------------------------------------
