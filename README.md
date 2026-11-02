@@ -17,8 +17,7 @@ La droite en pointillés représente une prédiction parfaite.
 | Métrique sur le jeu de test | Valeur | Unité |
 | --- | ---: | --- |
 | MAE — erreur absolue moyenne | 6,06 | kg N/ha |
-| MSE — erreur quadratique moyenne | 67,44 | (kg N/ha)² |
-| RMSE — racine de la MSE | 8,21 | kg N/ha |
+| RMSE — racine de l’erreur quadratique moyenne | 8,21 | kg N/ha |
 | R² — coefficient de détermination | 0,49 | sans unité |
 | MBE — biais moyen (prédit − observé) | −0,91 | kg N/ha |
 
@@ -33,7 +32,7 @@ git clone https://github.com/armandfavrot/my-project.git
 cd my-project
 ```
 
-Les commandes suivantes sont à exécuter depuis la racine du projet, sauf indication contraire. Le fichier de données utilisé par la préparation R doit être présent dans `data/ALFAM2-data-3.0/data-output/04/ALFAM2_plot.csv`.
+Les commandes suivantes sont à exécuter depuis la racine du projet, sauf indication contraire.
 
 ### 2. Restaurer l’environnement R
 

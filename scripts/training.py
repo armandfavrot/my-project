@@ -228,7 +228,7 @@ ax.text (
 
 fig.tight_layout()
 fig.savefig (IMAGES_DIR / "observed_vs_predicted.pdf", bbox_inches="tight")
-fig.savefig (IMAGES_DIR / "observed_vs_predicted.png", dpi=200, bbox_inches="tight")
+fig.savefig (IMAGES_DIR / "observed_vs_predicted.png", dpi=100, bbox_inches="tight")
 plt.close (fig)
 
 # --------------------------------------------------------------------

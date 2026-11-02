@@ -182,13 +182,11 @@ def compute_metrics (observed, predicted):
     predicted = np.asarray (predicted)
     errors = predicted - observed
 
-    mse = np.mean (errors ** 2)
     total = np.sum ((observed - observed.mean()) ** 2)
 
     return {
         "MAE": float(np.mean(np.abs(errors))),
-        "MSE": float(mse),
-        "RMSE": float(np.sqrt(mse)),
+        "RMSE": float(np.sqrt(np.mean(errors ** 2))),
         "R2": float(1 - np.sum(errors ** 2) / total) if total > 0 else None,
         "MBE": float(errors.mean()),
     }
