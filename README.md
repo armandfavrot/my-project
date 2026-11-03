@@ -1,3 +1,5 @@
+# [Projet lié à ma présentation du 3 novembre 2026 sur les métadonnées et la reproductibilité]
+
 # Prédire les émissions d’ammoniac avec un petit réseau de neurones
 
 Ce projet propose une démonstration de reproductibilité avec **renv** pour R et **pyenv** pour Python. Un petit réseau de neurones de type MLP est entraîné sur les données [ALFAM2](https://github.com/AU-BCE-EE/ALFAM2-data) pour prédire les émissions d’ammoniac après épandage. Les données utilisées correspondent à la [release 3.0](https://github.com/AU-BCE-EE/ALFAM2-data/releases/tag/v3.0).
